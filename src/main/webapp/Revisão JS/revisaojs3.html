@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Revisão JS III</title>
+</head>
+<body>
+	<div id="saida">
+		
+	</div>
+		
+</body>
+
+    <script>
+        function Pessoa(nome, idade){
+            this.nome = nome;
+            this.idade = idade;
+            this.dizerOi = function(){
+                window.alert("oi 2");
+            };
+        }
+        //Pessoa.prototype.dizerOi = function (){window.alert("oi");};
+        var p1 = new Pessoa("Jailson", 27);
+        console.log(p1.nome);
+        p1.dizerOi();
+    </script>
+	
+</html>
